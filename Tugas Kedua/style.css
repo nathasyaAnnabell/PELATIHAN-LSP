@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-logo img {
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 56px;
+}
+
+.hero-img {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+
+.about p {
+    max-width: 800px;
+    margin: 0;
+    color: #555;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}

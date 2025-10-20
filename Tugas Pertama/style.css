@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+nav, hero, aside, content, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+nav {
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: aqua;
+    height: 115px;
+}
+
+hero {
+    grid-area: 2 / 1 / 4 / 6;
+    background-color: antiquewhite;
+}
+
+aside {
+    grid-area: 4 / 1 / 7 / 3;
+    background-color: gray;
+}
+
+content {
+    grid-area: 4 / 3 / 7 / 6;
+    background-color: aquamarine;
+}
+
+footer {
+    grid-area: 7 / 1 / 8 / 6;
+    background-color: aqua;
+}
